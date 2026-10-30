@@ -21,8 +21,10 @@ command.
   hit varies around the sound's base (Deviance). A new sound is drawn from a kind: kick, snare, hat,
   perc, click, metal or clap, and perc, click and metal land in a random octave.
 - **An acid line** (track 5) after the TB-303: saw, square, pulse, tri, sine or duo through a model
-  of the 303's diode ladder filter, with the 303's gate, slide (an RC that may not get there) and
-  accent (a sweep that builds up). Its own sequencer draws musical lines: the rhythm first, a motif
+  of the 303's diode ladder filter, with the 303's gate, slide (an RC of 60 ms that may not get
+  there), accent (a sweep that builds up, a sharp attack against a plain note's soft one, weak on a
+  slid note), Env Mod that lowers where the sweep starts, and a square made from the saw as the 303
+  does. Its own sequencer draws musical lines: the rhythm first, a motif
   that repeats, notes from the scale, octaves, accents and slides where they move the line. Its
   Chaos takes it from those rules to pure chance.
 - **Patterns drawn at random:** each track loops over its own length (drums 1–8 bars, acid 1–4), so
@@ -37,8 +39,11 @@ command.
   **Space** lets the reverb move between rooms (small room to large hall) and the delay between
   lengths (dotted eighth, eighth, sixteenth, quarter), slowly: a glide takes 1–4 bars and each
   place is held for a while. The delay glides like an analog delay, so its repeats bend in pitch.
-- **Master:** hi cut, lo cut, resonance and **Glue**, a bus compressor that makes the mix tighter but
-  not louder. After it there is always a limiter at −0.3 dBFS.
+- **Master:** hi cut, lo cut, resonance and **Glue**, a light mastering chain that makes the mix
+  tighter and more finished but not louder: a compressor in parallel (Glue mix) with a gentle
+  transient expander, an EQ that leans the mix towards a pink slope with a little air, foundation and
+  de-harsh (Glue EQ), an inflator (Color) and the width with the lows kept in mono (Width), on its own
+  Glue page. After it there is always a limiter (−1 dBFS with the Glue on, −0.3 dBFS off).
 
 ## Live play in short
 
